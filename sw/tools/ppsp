@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python /apps/pps/tools/ppsplus/algbioi/core/run.py $@

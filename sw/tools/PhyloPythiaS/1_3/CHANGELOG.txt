@@ -1,0 +1,26 @@
+The first version is up and running - Feb, 2010
+Made changes to the scripts to cleanse the code and added verbosity - March, 2010
+Adding ruby libraries to a local folder so that the package can be used out of the box - April, 2010
+Switching to SQLite3 database instead of MySQL, taking burden off the user - April 15, 2010
+Updated INSTALL.txt - April 15, 2010
+Changed the NCBI gbk_gbff parser in utils.rb for speed improvements - April 16, 2010
+Cleansed the code and added timeouts - April 16, 2010
+Added PP like output formatting - April 19, 2010
+Added SVG pie chart support for every taxonomic rank - April 19, 2010
+Modifications in documentation and some of the scripts - April 20, 2010
+Added automated handling of sample specific data - April 21, 2010
+Training clean-up option for removing some data after models are built - April 23, 2010
+Fixed a bug in automated cross-validation - April 26, 2010
+Added a way to exclude some genomes from training - Nov 03, 2010
+Added support for file extensions - Nov 03, 2010
+Fixed bug in detection of model files in predict.rb - Nov 05, 2010
+Fixed a bug that might cause train.rb to jump to learning without creating necessary data files - Apr 28, 2011
+Filtering for non-ACGT characters to get better k-mer vectors - Aug 08, 2011
+By default generic model construction, no tree file needed - Sept 28, 2011
+Fixed a bug in Z-score normalization which could cause inaccurate scores for sparse data - Sept 29, 2011
+Added support for a memory efficient and faster fasta2kmer program by Ivan Gregor - Sept 05, 2012
+Fixed a bug in cross-validation program (svm_phylo_cv) that resulted in error which in turn might
+have caused learning with the lowest C value - Sept 05, 2012
+Cross-validation is not stratified - Oct 15, 2012
+Fixed a bug in classification which created negative taxids and consequently emptier PP style output - Oct 15, 2012
+Improved execution time by removing redundant calculations in dynamic programming - Oct 15, 2012

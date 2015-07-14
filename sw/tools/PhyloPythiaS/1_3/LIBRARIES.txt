@@ -1,0 +1,35 @@
+Author: Kaustubh Patil
+	patil@mpi-inf.mpg.de
+
+	Computational Genomics and Epidemiology
+	Max-Planck Institute for Informatics
+	Campus E1 4
+	66123 Saarbruecken
+	Germany
+
+Some files in this package are not written by the author and thus do not fall under the terms mentioned above. All these files are located in the scripts/lib/rubygems directory. Please see the respective terms for these packages. Also the binaries compiled using the SVMstruct library fall under their own license (see below). 
+
+Following libraries/programs are used and distributed along with this package solely for convenience reasons. The original source code for these libraries/programs was not changed.
+
+1. BioRuby (Ruby License)
+Available at http://www.bioruby.org
+License: Please see the corresponding license and copyrights in the directory scripts/lib/rubygems/bioruby
+Providing a verbatim copy of the version 1.1 of bioruby based upon the COPYING file (last checked April 07, 2010) http://github.com/bioruby/bioruby/blob/master/COPYING
+
+2. SQLite3-Ruby (BSD License)
+Available at http://rubyforge.org/projects/sqlite-ruby
+License: Please see the corresponding license and copyrights in the directory scripts/lib/rubygems/sqlite3-ruby-1.2.5
+
+3. SVG::GRAPH (Ruby License)
+Available at http://www.germane-software.com/software/SVG/SVG::Graph
+License: Please see the corresponding license and copyrights in the directory scripts/lib/rubygems/svg_graph_0.6.1
+
+THE BINARIES 
+
+1. SVMstruct (Thorsten Joachim's own license)
+Available at http:://svmlight.joachims.org
+License: Please see SVMstruct_LENCESE.txt for license agreement for SVMstruct from Thorsten Joachims.
+
+2. gsuffix (LGPL)
+Available at http://sourceforge.net/projects/gsuffix
+

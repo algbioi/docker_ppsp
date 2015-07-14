@@ -1,0 +1,25 @@
+--adapted from biosql1.0.1 schema
+--Kaustubh Patil, April 2010
+--(limited) compatibility with biosql enables code resuse
+--SQLite3 has no support for unsigned data types
+--defining a variable as INTEGER PRIMARY KEY makes it AUTOINCREMENT IF NULL IS PASSED
+
+--following table corresponds to the nodes table of the NCBI taxonomy
+CREATE TABLE taxon (
+       taxon_id         INTEGER PRIMARY KEY,
+       ncbi_taxon_id    INT(10),
+       parent_taxon_id  INT(10) ,
+       node_rank        VARCHAR(32),
+       UNIQUE (ncbi_taxon_id)
+);
+
+--create index on the parent_taxon_id as it will be searched quite often
+CREATE INDEX taxparent ON taxon(parent_taxon_id);
+
+--following table corresponds to the names table of the NCBI taxonomy
+CREATE TABLE taxon_name (
+       taxon_id         INTEGER  NOT NULL,
+       name             VARCHAR(255) NOT NULL,
+       name_class       VARCHAR(32) NOT NULL,
+       UNIQUE (taxon_id,name,name_class)
+);

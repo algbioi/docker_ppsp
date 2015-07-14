@@ -1,0 +1,46 @@
+This document explains different file formats used.
+
+1. Newick format
+
+Its a machine readable format for trees. See the following website for details;
+
+http://evolution.genetics.washington.edu/phylip/newicktree.html
+
+For the current binaries every node must be named with a integer value (string names are not
+supported). Moreover the tree must be rooted and the root node should also have an integer name.
+
+Example newick tree: ((5,6,7)2,(8)3,4)1;
+
+
+2. SVMlight format
+
+The binaries svm_phylo_learn svm_phylo_classify* and svm_phylo_cv understand the files in SVMlight format;
+
+http://svmlight.joachims.org
+
+There is one line for every example. Every line starts with a label, which in the present context corresponds
+to one of the nodes in the newick tree. The label is followed with a sparse vector representation. Each line can
+optionally end with a comment starting with the character "#".
+
+
+3. FASTA format
+
+Its a very popular format to store sequences;
+
+http://en.wikipedia.org/wiki/FASTA_format
+
+The fasta2kmers binary assumes the input file to be in this format. This binary has a restriction that sequence
+should not have more than 50,000 characters in one line.
+
+4. PhyloPythiaS raw output format
+
+Every line of this output file contains several tab separated entries. The first entry being the fasta header of the
+predicted sequence and 5th entry is its prediction.
+
+5. PhyloPythia output format
+
+This file format is also tab separated. It starts with some comment lines (6 to be specific) and follows one line per
+predicted sequence. Here the first entry is the fasta header followed by the NCBI taxonomy names for the predicted
+lineage.
+
+

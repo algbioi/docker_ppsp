@@ -1,0 +1,3 @@
+python /opt/tools/ppsplus/algbioi/misc/cont_preproc.py $CONT_CONTIGS_FILE_LISTING $DCKR_CACHEDIR/contigs.fna $DCKR_CACHEDIR/config.cfg /opt/tools $DCKR_CACHEDIR/ref $DCKR_CACHEDIR && python /opt/tools/ppsplus/algbioi/core/run.py -c $DCKR_CACHEDIR/config.cfg -g -o mg -s && python /opt/tools/ppsplus/algbioi/misc/cont_postproc.py $DCKR_CACHEDIR $CONT_BINNING_FILE
+
+
